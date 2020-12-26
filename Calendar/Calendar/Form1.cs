@@ -258,7 +258,7 @@ namespace Calendar
 
 
         }
-
+        // command 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             SerializeToXML(Job, filePath);
