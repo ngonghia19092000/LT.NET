@@ -28,3 +28,15 @@ D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.Form2.reso
 D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
 D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.exe
 D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.pdb
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.AJob.resources
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.Form1.resources
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.Form2.resources
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.exe
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.pdb
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\bin\Debug\Calendar.exe.config
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\bin\Debug\Calendar.exe
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\bin\Debug\Calendar.pdb
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.Properties.Resources.resources
+C:\Users\NGO MINH NGHIA\Desktop\Calendar\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache

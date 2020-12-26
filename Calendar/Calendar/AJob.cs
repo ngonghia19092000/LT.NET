@@ -49,11 +49,7 @@ namespace Calendar
         {
 
         }
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-
-        }
+      
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Job.Job = textBox1.Text;

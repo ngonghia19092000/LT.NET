@@ -101,12 +101,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="background\pexels-faaiq-ackmerd-1025469.jpg" />
-    <Content Include="background\pexels-fwstudio-129731.jpg" />
-    <Content Include="background\pexels-madison-inouye-1831234.jpg" />
-    <Content Include="background\pexels-magda-ehlers-960137.jpg" />
-    <None Include="background\Star-PNG-Transparent-Image-715x715.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

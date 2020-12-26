@@ -59,55 +59,5 @@ namespace Calendar.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pexels_faaiq_ackmerd_1025469 {
-            get {
-                object obj = ResourceManager.GetObject("pexels-faaiq-ackmerd-1025469", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pexels_fwstudio_129731 {
-            get {
-                object obj = ResourceManager.GetObject("pexels-fwstudio-129731", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pexels_madison_inouye_1831234 {
-            get {
-                object obj = ResourceManager.GetObject("pexels-madison-inouye-1831234", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pexels_magda_ehlers_960137 {
-            get {
-                object obj = ResourceManager.GetObject("pexels-magda-ehlers-960137", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Star_PNG_Transparent_Image_715x715 {
-            get {
-                object obj = ResourceManager.GetObject("Star-PNG-Transparent-Image-715x715", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

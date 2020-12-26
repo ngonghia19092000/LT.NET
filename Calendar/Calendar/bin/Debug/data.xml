@@ -66,5 +66,31 @@
       <Job>Test Data</Job>
       <Status>COMING</Status>
     </PlanItem>
+    <PlanItem>
+      <Date>2020-12-26T17:49:41.4866349+07:00</Date>
+      <StartTime>
+        <X>1</X>
+        <Y>1</Y>
+      </StartTime>
+      <EndTime>
+        <X>3</X>
+        <Y>0</Y>
+      </EndTime>
+      <Job>sadasjkdna</Job>
+      <Status>DOING</Status>
+    </PlanItem>
+    <PlanItem>
+      <Date>2020-12-26T00:00:00</Date>
+      <StartTime>
+        <X>4</X>
+        <Y>0</Y>
+      </StartTime>
+      <EndTime>
+        <X>3</X>
+        <Y>0</Y>
+      </EndTime>
+      <Job>klnksdcv</Job>
+      <Status>DOING</Status>
+    </PlanItem>
   </Job>
 </PlanData>

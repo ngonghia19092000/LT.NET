@@ -118,19 +118,5 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pexels-magda-ehlers-960137" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\background\pexels-magda-ehlers-960137.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-madison-inouye-1831234" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\background\pexels-madison-inouye-1831234.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-fwstudio-129731" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\background\pexels-fwstudio-129731.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-faaiq-ackmerd-1025469" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\background\pexels-faaiq-ackmerd-1025469.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Star-PNG-Transparent-Image-715x715" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\background\Star-PNG-Transparent-Image-715x715.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
 </root>
