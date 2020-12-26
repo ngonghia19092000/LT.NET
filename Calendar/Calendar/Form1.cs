@@ -16,30 +16,31 @@ namespace Calendar
         private PlanData job;
         public PlanData Job { get => job; set => job = value; }
         public List<List<Button>> Matrix { get => matrix; set => matrix = value; }
-      
+
 
         private List<string> dayOfWeeks = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
         #endregion
-        
+
         public Form1()
         {
             InitializeComponent();
             loadMatrix();
             try
             {
-               Job = DeserializeFromXML(filePath) as PlanData;
+                Job = DeserializeFromXML(filePath) as PlanData;
             }
             catch { setDefaultJob(); }
-            }
+        }
         void setDefaultJob()
         {
             Job = new PlanData();
             Job.Job = new List<PlanItem>();
             Job.Job.Add(new PlanItem()
-            { Date = DateTime.Now, 
-                StartTime = new Point(4, 0), 
-                EndTime = new Point(5, 0), 
-                Job = "Test Data", 
+            {
+                Date = DateTime.Now,
+                StartTime = new Point(4, 0),
+                EndTime = new Point(5, 0),
+                Job = "Test Data",
                 Status = PlanItem.listStatus[(int)EPlanItem.COMING]
             });
             Job = new PlanData();
@@ -94,7 +95,7 @@ namespace Calendar
         {
             dtPicker.Value = DateTime.Now;
         }
-       
+
         //Tạo button ngày trong tháng.
         void loadMatrix()
         {
@@ -105,7 +106,7 @@ namespace Calendar
                 Height = 0,
                 Location = new Point(0, 0)
             };
-           
+
             for (int i = 0; i < Cons.DayOfColumn; i++)
             {
                 Matrix.Add(new List<Button>());
@@ -119,7 +120,7 @@ namespace Calendar
                     oldBtn = btn;
                     oldBtn.FlatStyle = FlatStyle.Flat;
                     oldBtn.FlatAppearance.BorderColor = Color.YellowGreen;
-                   
+
                 }
                 oldBtn = new Button()
                 {
@@ -127,24 +128,24 @@ namespace Calendar
                     Height = 0,
                     Location = new Point(0, oldBtn.Location.Y + Cons.DateButtonHeight)
                 };
-               
+
             }
 
             SetDefaultDay();
-           // addNumberIntoMatrixByDate(dtPicker.Value);
+            // addNumberIntoMatrixByDate(dtPicker.Value);
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty((sender as Button).Text))
                 return;
-            Form2 daily = new Form2( new DateTime(dtPicker.Value.Year, dtPicker.Value.Month, Convert.ToInt32((sender as Button).Text)), Job);
+            Form2 daily = new Form2(new DateTime(dtPicker.Value.Year, dtPicker.Value.Month, Convert.ToInt32((sender as Button).Text)), Job);
             daily.ShowDialog();
         }
 
 
         //Kiểm tra số ngày của tháng bất kỳ
-        int DayOfMonth( DateTime date)
+        int DayOfMonth(DateTime date)
         {
             switch (date.Month)
             {
@@ -171,9 +172,9 @@ namespace Calendar
         {
             clearMatrix();
             DateTime useDate = new DateTime(date.Year, date.Month, 1);
-           
+
             int line = 0;
-            for(int i = 1; i<=DayOfMonth(date); i++)
+            for (int i = 1; i <= DayOfMonth(date); i++)
             {
                 int col = dayOfWeeks.IndexOf(useDate.DayOfWeek.ToString());
                 Button btn = Matrix[line][col];
@@ -191,10 +192,10 @@ namespace Calendar
                 if (col >= 6)
                     line++;
                 useDate = useDate.AddDays(1);
-                
+
             }
         }
-       
+
         void clearMatrix()
         {
             for (int i = 0; i < Matrix.Count; i++)
@@ -235,11 +236,11 @@ namespace Calendar
         {
             FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
             XmlSerializer xs = new XmlSerializer(typeof(PlanData));
-            xs.Serialize(fs,data);
+            xs.Serialize(fs, data);
             fs.Close();
         }
         //Load dữ liệu từ file .xml lên.
-       private object DeserializeFromXML(string filePath)
+        private object DeserializeFromXML(string filePath)
         {
             FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
             try
@@ -249,18 +250,18 @@ namespace Calendar
                 fs.Close();
                 return result;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 fs.Close();
                 throw new NotImplementedException();
             }
-          
-           
+
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SerializeToXML(Job, filePath); 
+            SerializeToXML(Job, filePath);
         }
     }
 }

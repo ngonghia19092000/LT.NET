@@ -21,3 +21,10 @@ D:\LT.NET\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache
 D:\LT.NET\Calendar\Calendar\obj\Debug\Calendar.exe
 D:\LT.NET\Calendar\Calendar\obj\Debug\Calendar.pdb
 D:\LT.NET\Calendar\Calendar\obj\Debug\Calendar.AJob.resources
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.AJob.resources
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.Form1.resources
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.Form2.resources
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.exe
+D:\Source code\New folder\LT.NET\Calendar\Calendar\obj\Debug\Calendar.pdb

@@ -20,11 +20,11 @@ namespace Calendar
             InitializeComponent();
             this.Date = date;
             this.Job = job;
-            
+
             fPanel.Width = panel2.Width;
             fPanel.Height = panel2.Height;
             panel2.Controls.Add(fPanel);
-            
+
             dateTimePicker1.Value = Date;
 
         }
@@ -36,8 +36,8 @@ namespace Calendar
                 List<PlanItem> todayJob = GetJobByDate(date);
                 for (int i = 0; i < todayJob.Count; i++)
                 {
-                    AJob aJob = new AJob(todayJob[i]);
-                    fPanel.Controls.Add(aJob);
+
+                    addJob(todayJob[i]);
                 }
             }
         }
@@ -62,6 +62,42 @@ namespace Calendar
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             ShowJobByDate((sender as DateTimePicker).Value);
+        }
+        private void AJob_Edited(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //add job
+        private void AJob_Deleted(object sender, EventArgs e)
+        {
+            AJob uc = sender as AJob;
+            PlanItem job = uc.Job;
+            fPanel.Controls.Remove(uc);
+            Job.Job.Remove(job);
+        }
+        void addJob(PlanItem job)
+        {
+            AJob aJob = new AJob(job);
+            aJob.Edited += AJob_Edited;
+            aJob.Deleted += AJob_Deleted;
+            fPanel.Controls.Add(aJob);
+        }
+
+
+
+
+        private void todayLB_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+        }
+
+        private void addJobLb_Click(object sender, EventArgs e)
+        {
+            PlanItem item = new PlanItem() { Date = dateTimePicker1.Value };
+            Job.Job.Add(item);
+            addJob(item);
         }
     }
 }
